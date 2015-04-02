@@ -1,6 +1,6 @@
 ---
 layout: post
 title: "First post"
-date: 2014-04-30
+date: 2015-04-02
 ---
-This is the first post 
+This is the second post 
