@@ -1,11 +1,13 @@
 body {
-    font: 14px/1.5em "Lucida Grande", "Lucida Sans Unicode";
-    color: black;
-    background: white;
+    background-color:#f2f2f6;
+    font-family: 'Helvetica', sans-serif;
+    color:#000;
+    font-size: 120%;
+    font-weight: 100;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+    text-align: center;
     list-style: none;
     font-weight: bold;
 }
@@ -28,8 +30,10 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 3em;
+    font-size: 2.0em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    text-align: center;
+    padding-top: 2.0em;
 }
 h2 {
     color: orange;
@@ -37,10 +41,18 @@ h2 {
 h3, h4, h5 {
     color: #0080FF;
 }
+.wrapper {
+  padding-top: 1.7em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
 p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
+    margin-left:1.5em;
+    margin-bottom: 1.5em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    text-align: center;
+
 }
 footer {
     border-top: 1px solid #d5d5d5;
@@ -48,10 +60,11 @@ footer {
 }
 
 ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+    font-size: 1.0em;
+    text-align: center;
 }
 
 ul.posts li {
     list-style: none;
+    text-align: center;
 }
