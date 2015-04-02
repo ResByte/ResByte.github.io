@@ -1,6 +1,7 @@
 body {
-    margin: 60px auto;
-    width: 70%;
+    font: 14px/1.5em "Lucida Grande", "Lucida Sans Unicode";
+    color: black;
+    background: white;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -22,6 +23,12 @@ a:hover {
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+h2 {
+    color: orange;
+}
+h3, h4, h5 {
+    color: #0080FF;
 }
 p {
     font-size: 1.5em;
