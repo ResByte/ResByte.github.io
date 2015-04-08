@@ -4,6 +4,7 @@ body {
     color:#000;
     font-size: 120%;
     font-weight: 100;
+    text-align: center;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
