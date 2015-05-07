@@ -83,4 +83,6 @@ div.img {
 div.post{
    
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
