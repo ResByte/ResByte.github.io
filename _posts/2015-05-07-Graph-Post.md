@@ -8,6 +8,12 @@ date: 2015-05-07
 <p>The data structure to represent these graphs are of two forms, Adjacency Matrix representation and other is Adjacency List representation. Matrix representation is used when the number of edges is much larger than number of vertex and List representation in other cases. Each of the representation has its own benefit but mostly adjacency list is used to denote graph. Therefore, in this post only adjacency list is described.</p>
 <p> Boost has one of the most widely used graph library. Using Boost Graph Library(BGL), the graph as an adjacency list is described in 
 </p>
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
+
 {% highlight cpp %}
 #include "boost/include/adjacency_list.hpp"
 {% endhighlight %}
