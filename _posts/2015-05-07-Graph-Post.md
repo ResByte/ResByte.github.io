@@ -11,7 +11,7 @@ date: 2015-05-07
 {% endhighlight %}	
 In order to create an undirected graph, we use the above as 
 </p>
-{% highlight cpp lineos%}
+{% highlight cpp lineos %}
 #include <boost/include/adjacency_list.hpp>
 typedef boost::adjacency_list<listS,vecS,undirectedS> Graph;
 int main(){
