@@ -3,17 +3,19 @@ layout: default
 title: Abhinav Dadhich
 ---
 
-<p>Hello ! <br>
+<p>Hello World ! <br>
+<h3> Education </h3>
 I am research based Master Course student in Information Science at Nara Institute of Science and Technology(NAIST), Japan. <br>
-I have experience of projects in Machine Learning, Computer Vision and Robotics. I want to be jack of all trades in Robotics.   
+I have experience of projects in Machine Learning, Computer Vision and Robotics. .   
 </p>
 <br>
 <br>
 <br>
-<h3> Master Thesis </h3>
-<p>My master's research is broadly in lies under robot navigation and learning.<br>
+<h3> Research </h3>
+<p>My master's research broadly lies under robot navigation and learning.<br>
 During robot navigation in real world for long periods of working such as months,<br> 
-the area around the robot is changing. I am generating  robot inference <br>
+the area around the robot is changing. These changes causes error in continious localization.<br>
+The proposed model provides robot inference <br>
 about objects that that change their position.<br>
 To get full list of projects and experience, please refer to my Resume. </p>
 
