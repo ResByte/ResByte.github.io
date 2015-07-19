@@ -39,6 +39,8 @@ h2 {
 }
 h3, h4, h5 {
     color: brown;
+    margin-left:auto;
+    margin-right: auto;
 }
 .wrapper {
   padding-top: 1.7em;
