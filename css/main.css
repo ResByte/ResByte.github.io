@@ -100,5 +100,7 @@ div.images{
     margin-left: auto;
     margin-right: auto;
     margin-top: 2.0em;	
-    background-size:100px;
+    background-repeat: no-repeat;
+
+	
 }

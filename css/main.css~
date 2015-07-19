@@ -102,13 +102,3 @@ div.images{
     margin-top: 2.0em;	
     background-size:100px;
 }
-div.container {
-    width: 200px;
-    height: 120px;
-}
-
-/* resize images */
-div.container images {
-    width: 100%;
-    height: auto;
-}
