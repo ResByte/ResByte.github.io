@@ -95,9 +95,9 @@ div.icons {
     font-size: 1.5em;
 }
 div.images{
-    width: auto;
-    height: auto;
-       margin-left: auto;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
     margin-right: auto;
     margin-top: 2.0em;	
 }
