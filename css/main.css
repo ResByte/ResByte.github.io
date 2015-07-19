@@ -108,7 +108,7 @@ div.container {
 }
 
 /* resize images */
-div.container img {
+div.container images {
     width: 100%;
     height: auto;
 }
