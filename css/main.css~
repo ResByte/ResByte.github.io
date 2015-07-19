@@ -50,8 +50,8 @@ h3, h4, h5 {
 }
 
 p {
-    margin-left:auto;
-    margin-right: 2.0em;
+    margin-left: 2.0;
+    margin-right: 5.0em;
     margin-bottom: 0.5em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     text-align: left;
