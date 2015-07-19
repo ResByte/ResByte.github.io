@@ -13,7 +13,7 @@ I have experience of projects in Machine Learning, Computer Vision and Robotics.
 <p>My master's research broadly lies under robot navigation and learning.<br>
 During robot navigation in real world for long periods of working such as months, the area around the robot is changing. These changes causes error in continious localization and path-planning tasks. Therefore, tackling dynamic objects in mapping itself can reduce error at higher level tasks. The proposed model provides inference about objects that that change their position. We further tests the model on simulation as well as real world dataset.<br></p>
 <div class = 'images'>
-	
+	<img src = "assets/pfig_1.png">
 </div>
 <p> To get full list of projects and experience, please refer to my Resume or mail me at linkedin. </p>
 
