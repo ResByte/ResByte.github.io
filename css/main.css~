@@ -93,7 +93,11 @@ div.icons {
     margin-left: auto;
     font-family: "Lucida Grande";
     font-size: 1.5em;
-
-
-
+}
+div.images{
+    width: auto;
+    height: auto;
+       margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.0em;	
 }
