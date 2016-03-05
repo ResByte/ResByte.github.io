@@ -1,29 +1,45 @@
----
-layout: default
-title: Abhinav Dadhich
----
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Abhinav Dadhich</title>
 
-<p>Hello World ! <br>
-<p> I am currently working with Rapyuta Robotics as Robot Navigation Intern at Tokyo. </p>
-</p>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Abhinav Dadhich</h1>
+        <p>Hello World ! <br>
+        <p> I am currently working with Rapyuta Robotics as Robot Navigation Intern at Tokyo. </p>
+        <h3>Interests</h3>
+        <p>Robotics | Machine Learning | 3D Mapping | SLAM | Computer Vision |</p>
+        </p>
+      </header>
+      <section>
 
-<h3> Education </h3>
-<p>I did research based Master Course student in Information Science from Nara Institute of Science and Technology(NAIST), Japan. I pursued B.Tech. in EE from Indian Institute of Technology, Jodhpur(IITJ).  <br>
-</p>
+        
+        <h1>Projects</h1>
 
-<h2>Master Thesis</h2>
-<p>
-Long term applications of autonomous robot navigation consists of repeated traversals in real world. The traditional robot navigation techniques assume static world where no object around the robot changes its place, however the real world has people moving around the robot and also furniture such as chair, table etc are displaced. In order for robust navigation dynamic object, the objects that change their position, should be estimated robustly. This thesis targets the dynamic objects such as table or chair which changes its position in subsequent traversals of robot and are termed as low-dynamic. A method for estimation of these low-dynamic object around the robot is presented in this thesis. The main idea is to use the duration for which the object are observed at a place to estimate the nature of the object. The environment around the robot is represented using occupancy grid map and each grid cell in the map is modelled as semi-markov chain to infer the state of cell. In this thesis, the proposed method is tested on simulation environment as well as real world environment. The results shows that the proposed method robustly tracks the changes in environment for weeks of observation even in the presence of noise and occlusion.</p>
+          <h3>1. 3D Mapping of Indoor Environments</h3>
+          During Master Course, I played around a lot with RGBD sensors. In this project, I created 3D map of the environment from turtlebot robot. I used RBPF localization with occupancy grids to generate 3D Octomaps. The accuracy of this was limited to non-cluttered envirnonments like hallways. As can be seen from the figure.
+          <div class="images">
+            <img src="./assets/3D-map1.png" alt="3D Occupancy Grid Map" >
+          </div>
 
-
-<h2>Projects</h2>
-
-<h3>1. 3D Mapping of Indoor Environments</h3>
-During Master Course, I played around a lot with RGBD sensors. In this project, I created 3D map of the environment from turtlebot robot. I used RBPF localization with occupancy grids to generate 3D Octomaps. The accuracy of this was limited to non-cluttered envirnonments like hallways. As can be seen from the figure.
-<div class="images">
-	<img src="./assets/3D-map1.png" alt="3D Occupancy Grid Map" >
-</div>
-
-
-
-<p> To get full list of projects and experience, please refer to my Resume or mail me at linkedin. </p>
+        
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="http://github.com/orderedlist">Steve Smith</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
