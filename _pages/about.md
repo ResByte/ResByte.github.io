@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 
-I am currently working at [Abeja](http://www.abeja.asia) When I am training a Deep Learning Model, I study Generative Models.
+I am currently working at [Abeja](http://www.abeja.asia) as Deep Learning Researcher. I am interested in Applied Deep Learning as well as Generative Modelling.
 
 #### Education
           
