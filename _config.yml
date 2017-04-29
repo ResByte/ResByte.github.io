@@ -190,8 +190,8 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: default #single
-      author_profile: true
+      layout: single
+      author_profile: False
       read_time: true
       comments: true
       share: true
