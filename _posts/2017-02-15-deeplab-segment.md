@@ -8,7 +8,7 @@ tags:
   - CRF
   - Atrous conv
 ---
-#### [Paper-Link](https://arxiv.org/abs/1606.00915)
+ Paper : [Chen et al.](https://arxiv.org/abs/1606.00915)
 
 Title: "DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs"
 
