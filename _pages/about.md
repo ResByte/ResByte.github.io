@@ -18,6 +18,10 @@ Following are few of the various projects I have worked on:
 - Modelling deep neural nets from scratch.
 - Benchmarking libraries such as mxnet, tensorflow etc.
 
+## Recent Posts
+- [Boundary Equilibrium GAN](https://resbyte.github.io/posts/2017/04/david-began-17/)
+- [Tensorflow-Wrap](https://resbyte.github.io/posts/2017/03/tf-wrap/)
+
 ## Programming and Tools
 
 C++ | Python| Keras | Tensorflow | Mxnet | Scikit-learn | OpenCV | ROS 
