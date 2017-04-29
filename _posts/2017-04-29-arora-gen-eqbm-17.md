@@ -66,7 +66,7 @@ There are severall assumption for the above objectives
 
 However, in practice, training of a GAN occurs in batches of data samples and hence it is argued that the behavior of $$D$$ is different from what is assumed for the objective. 
 
-Key proposition by [Arora et al.](https://arxiv.org/abs/1703.00573) : " ***a bounded capacity discriminator is unable to force the generator to produce a distribution with very high diversity***"
+Key proposition by [Arora et al.](https://arxiv.org/abs/1703.00573) : "***a bounded capacity discriminator is unable to force the generator to produce a distribution with very high diversity***"
 
 This key proposition is motivated from previous studies on psuedorandomness. 
 
