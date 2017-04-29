@@ -8,9 +8,11 @@ tags:
   - CRF
   - Atrous conv
 ---
- Paper : [Chen et al.](https://arxiv.org/abs/1606.00915)
 
-Title: "DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs"
+# DeepLab: Semantic Image Segmentation 
+
+Paper : [Chen et al.](https://arxiv.org/abs/1606.00915)
+
 
 ## Challenges
 There are 3 challenges in segmentation using Deep CNNs

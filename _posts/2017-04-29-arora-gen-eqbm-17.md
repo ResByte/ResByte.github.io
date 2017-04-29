@@ -9,6 +9,7 @@ tags:
   - GAN
 ---
 
+# Notes: Generalization and Equilibrium in GANs
 
 paper: [Arora et al.](https://arxiv.org/abs/1703.00573)
 
