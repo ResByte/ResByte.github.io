@@ -2,6 +2,7 @@
 title: 'Notes: Generalization and Equilibrium in GANs'
 date: 2017-04-29
 permalink: /posts/2017/04/arora-gen-eqbm-17/
+comments: true
 tags:
   - Deep Learning
   - Theory
