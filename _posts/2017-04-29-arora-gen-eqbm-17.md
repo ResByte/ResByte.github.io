@@ -50,7 +50,7 @@ $$
 d_{JS}(\mu, \nu) = \frac{1}{2}(KL(\mu || \frac{\mu+\nu}{2}) + KL(\nu || \frac{\mu + \nu}{2}))
 $$
 
-In [Wasserstein Gan by Arjovsky et al. 2017](https://arxiv.org/abs/1701.07875) , Earth-mover distance as objective is proposed , with $\tilde{x}=G(z)$  
+In [Wasserstein Gan by Arjovsky et al. 2017](https://arxiv.org/abs/1701.07875) , Earth-mover distance as objective is proposed , with $$\tilde{x}=G(z)$$  
 
 $$
 min_G max_D \mathbb{E}_{x\sim\mathbb{P}_{real} }[D(x)] -  \mathbb{E}_{\tilde{x}\sim \mathbb{P}_{\theta}}[D(\tilde{x})]
@@ -81,15 +81,15 @@ The generalization argument :  after training GAN, the empirical distance in ass
 
 Assume distributions for real and fake ( $$\mu$$ and $$\nu$$ respectively) as uniform Gaussian distribution. While training on a sufficiently large dataset, empirical distribution. are sampled from data(batch) given as $$\tilde{\mu}$$ and $$\tilde{\nu}$$ respectively. If the size of batch is much less than over all dimension of data, then JS divergence between empirical distribution is approximately $$\log 2$$ and Earth-Mover(Wasserstein) distance is $$\geq 1.1$$ . While the initial assumptions for each of them to be 0 after training. The proof for this is presented in the paper.  
 
-Hence, interpreting that a GAN objective is minimizing the distance is wrong because even if the generator finds distribution of samples and the discriminator is optimal, distance between the empirical distributions (per batch sampl dist.) is large. This results in generator skipping this distribution and minimizing distance between empirical distributions. 
+Hence, interpreting that a GAN objective is minimizing the distance is wrong because even if the generator finds distribution of samples and the discriminator is optimal, distance between the empirical distributions (per batch sample dist.) is large. This results in generator skipping this distribution and minimizing distance between empirical distributions. 
 
-In summary, a minimized $$G$4 has $$\mathbb{P}_G \ne \mathbb{P}_{real} $$ , but it does not know.   
+In summary, a minimized $$G$$ has $$\mathbb{P}_G \ne \mathbb{P}_{real} $$ , but it does not know.   
 
 
 
-#### Can there be a correct way to represent the Distance?
+### Can there be a correct way to represent the Distance?
 
-In the [paper](https://arxiv.org/abs/1703.00573), a new distance metric is proposed name as Neural Network divergence between NNs $$\mu$$ and $$\nu$$,  given as 
+In the [paper](https://arxiv.org/abs/1703.00573), a new distance metric is proposed named as Neural Network divergence between NNs $$\mu$$ and $$\nu$$,  given as 
 
 $$
 d_{NN}(\mu|| \nu) = \max_{\nu \in \mathcal{V}} \mathbb{E}_{x\sim\mu}[f(D_{\nu}(x))] + \mathbb{E}_{x\sim\nu}[f(D_{\nu}(1-x))]
@@ -99,13 +99,13 @@ where $$D_{\nu} : \nu \in \mathcal{V}$$ is a class of discriminators and $$f$$ i
 
 This proposed NN divergence is psuedosymmetric because even if $$d_{NN}(\mu, \nu) = 0$$  then the neural nets may not be same, however it satisfies triangular inequality for three NNs ($$\mu_1, \mu_2, \mu_3$$) as $$d_{NN}(\mu_1, \mu_3) \le d_{NN}(\mu_1, \mu_2) + d_{NN}(\mu_2, \mu_3) $$ and hence symmetric. 
 
-The [paper](https://arxiv.org/abs/1703.00573) also shows that for the batch size $m$  and constant $C$, if 
+The [paper](https://arxiv.org/abs/1703.00573) also shows that for the batch size $$m$$  and constant $$C$$, if 
 
 $$
 m \ge \frac{C n \Delta^2 \log (L L_f n / \epsilon)}{\epsilon^2}
 $$
 
-then it is higly propable that NN distance between empirical distribution and real distribution is bounded by $\epsilon$. 
+then it is higly propable that NN distance between empirical distribution and real distribution is bounded by $$\epsilon$$. 
 
 $$
 | d_{NN}(\hat\mu|| \hat\nu) - d_{NN}(\mu|| \nu) | \le \epsilon
