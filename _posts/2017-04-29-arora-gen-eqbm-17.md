@@ -15,6 +15,8 @@ This post is about an interesting paper by Arora et al. 2017. They explains a re
 
 paper: [Arora et al.](https://arxiv.org/abs/1703.00573)
 
+---
+
 A [number of variations of GANs](https://github.com/hindupuravinash/the-gan-zoo)  been proposed in past few years. There are still several challenges associated with them such as training without collapsing, generalization etc. 
 
 ## GAN Introduction
