@@ -10,6 +10,7 @@ tags:
 ---
 
 # DeepLab: Semantic Image Segmentation 
+This post is a summary of Segmentation paper by Chen et al. 2016. They combine CRFs to generate a more accurate segmentation results. 
 
 Paper : [Chen et al.](https://arxiv.org/abs/1606.00915)
 
