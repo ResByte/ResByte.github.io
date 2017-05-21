@@ -19,6 +19,7 @@ Following are few of the various projects I have worked on:
 - Benchmarking libraries such as mxnet, tensorflow etc.
 
 ## Recent Posts
+- [Densenet in TF](https://resbyte.github.io/posts/2017/05/tf-densenet/)
 - [GAN and Equilibrium](https://resbyte.github.io/posts/2017/04/arora-gen-eqbm-17/)
 - [Boundary Equilibrium GAN](https://resbyte.github.io/posts/2017/04/david-began-17/)
 - [Tensorflow-Wrap](https://resbyte.github.io/posts/2017/03/tf-wrap/)
