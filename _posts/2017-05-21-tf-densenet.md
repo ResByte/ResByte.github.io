@@ -9,7 +9,7 @@ tags:
 ---
 
 # Densenet 
-arxiv: https://arxiv.org/abs/1608.06993
+arxiv: [Paper](https://arxiv.org/abs/1608.06993)
 ![fig](https://d2mxuefqeaa7sj.cloudfront.net/s_8C67F3B1EB0F5ABE74BEB3BC706769E48F9A2C9CE88212D04817755A2125A582_1495365425569_image.png)
 
 ```python
