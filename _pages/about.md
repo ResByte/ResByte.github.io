@@ -8,9 +8,10 @@ redirect_from:
   - /about.html
 ---
 
+I am currently working at [Abeja](http://www.abeja.asia) as Deep Learning Researcher. I am interested in Applied Deep Learning as well as Adversarial Models. With experience in data cleansing and data preprocessing, I develop several ML and CV applications to enhance business operations and provide an edge over competitors.  
+Most frequent tools used are : Pytorch, Keras, Tensorflow, Nvidia-Docker, Opencv, Scikit-Learn
 
-I am currently working at [Abeja](http://www.abeja.asia) as Deep Learning Researcher. I am interested in Applied Deep Learning as well as Adversarial Models. 
-Following are few of the various projects I have worked on:
+Following are a few of the various projects I have worked on:
 
 - Image classification using deep neural nets. 
 - Fine tuning a pre-trained network.
