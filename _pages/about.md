@@ -8,16 +8,15 @@ redirect_from:
   - /about.html
 ---
 
-I am currently working at [Abeja](http://www.abeja.asia) as Deep Learning Researcher. I am interested in Applied Deep Learning as well as Adversarial Models. With experience in data cleansing and data preprocessing, I develop several ML and CV applications to enhance business operations and provide an edge over competitors.  
+I am currently working at [Abeja](http://www.abeja.asia) as Deep Learning Researcher. I am interested in Applied Deep Learning  especially unsupervised learning as well as representation learning.  
 Most frequent tools used are : Pytorch, Keras, Tensorflow, Nvidia-Docker, Opencv, Scikit-Learn
 
-Following are a few of the various projects I have worked on:
-
-- Image classification using deep neural nets. 
-- Fine tuning a pre-trained network.
-- Feature learning from images.
-- Modelling deep neural nets from scratch.
+Following are a few of the various themes I have worked on:
+- Image classification using deep neural nets with pre-trained as well as from scratch. 
+- Object Detection using SSD, Yolo, Faster-RCNN. 
+- Unsupervised representation learning for images. 
 - Benchmarking libraries such as mxnet, tensorflow etc.
+- Human Pose Estimation from image.
 
 ## Recent Posts
 - [Densenet in TF](https://resbyte.github.io/posts/2017/05/tf-densenet/)
