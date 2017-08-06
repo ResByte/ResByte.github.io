@@ -17,6 +17,8 @@ Following are a few of the various themes I have worked on:
 - Unsupervised representation learning for images. 
 - Benchmarking libraries such as mxnet, tensorflow etc.
 - Human Pose Estimation from image.
+- 3D Dense Slam using Depth sensor. 
+- Robot Navigation for Long term Deployments
 
 ## Recent Posts
 - [Densenet in TF](https://resbyte.github.io/posts/2017/05/tf-densenet/)
