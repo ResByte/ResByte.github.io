@@ -21,7 +21,7 @@ Following are a few of the various themes I have worked on:
 - Robot Navigation for Long term Deployments
 
 ## Recent Posts
-- [Pytorch Tutorial for Practitioners](https://resbyte.github.io/posts/2017/08/pytorch-tutorial/)
+- [Pytorch Tutorial for Practitioners](../posts/2017/08/pytorch-tutorial/)
 - [Densenet in TF](https://resbyte.github.io/posts/2017/05/tf-densenet/)
 - [GAN and Equilibrium](https://resbyte.github.io/posts/2017/04/arora-gen-eqbm-17/)
 - [Boundary Equilibrium GAN](https://resbyte.github.io/posts/2017/04/david-began-17/)
