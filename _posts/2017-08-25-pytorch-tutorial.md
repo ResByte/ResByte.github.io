@@ -11,6 +11,17 @@ tags:
 
 The example here is motivated from pytorch examples. Please have a look at github/pytorch to know more.
 
+
+Summary of steps:
+1. Setup transformations for the data to be loaded. 
+2. Create dataloader from datasets.
+3. Setup network to train.
+4. In train phase, set network for training
+5. Compute forward pass and output prediction
+6. Compute loss and accuracy
+7. In train phase do the backprop and update weights of the network.
+8. In test phase, compute forward pass and compute precision.
+
 ```python
 import torch
 import torch.nn as nn
@@ -69,7 +80,7 @@ optimizer = optim.SGD(net.parameters(), lr=0.002, momentum=0.9, weight_decay=1e-
 
 
 
-Loss function can be defined now
+Loss function can be defined as
 
 ```python
 criterion = nn.CrossEntropyLoss().cuda()
@@ -79,13 +90,12 @@ criterion = nn.CrossEntropyLoss().cuda()
 
 
 
-Let's try training
+Setup the model defined above for training.
 
 ```python
 # first step set network to train value
 net.train()
 ```
-
 
 
 Load a batch and create variable object for the given batch
