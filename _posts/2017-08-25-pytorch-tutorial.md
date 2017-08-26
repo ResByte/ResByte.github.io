@@ -16,10 +16,6 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 import torch.nn.functional as F
-import numpy as np
-import torch.optim as optim
-import math
-import time
 import torchvision.models as models
 import torchvision.datasets as dset
 import torchvision.transforms as transforms
@@ -32,6 +28,7 @@ Before Loading a dataset, it is better to define what kind of transformation wil
 Here, we perform randomized cropping of image, random horizontal flip , normalize an image.
 
 ```python
+# example transformation, change as per your task.
 transformations = transforms.Compose([transforms.RandomSizedCrop(256),
                                       transforms.RandomHorizontalFlip(),
                                       transforms.ToTensor(),
