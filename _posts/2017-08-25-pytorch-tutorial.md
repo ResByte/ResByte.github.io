@@ -186,7 +186,7 @@ During validation, there are only a few steps different than training. Firstly, 
 ```python
 net.eval()
 # While iterating over the dataset do training
-for idx, (data, targets) in enumerate(train_loader):
+for idx, (data, targets) in enumerate(test_loader):
   data, targets = data.cuda(), targets.cuda() # comment for cpu version
   data, targets = Variable(data), Variable(targets) # create variables for each
 
