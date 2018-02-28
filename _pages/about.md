@@ -24,8 +24,14 @@ Following are a few of the various themes I have worked on:
 ## Book 
 
 ### Practical Computer Vision
-- A practical guide designed to get you from basics to current state of art in computer vision systems.
-- Buy at [Amazon US](https://www.amazon.com/Practical-Computer-Vision-insightful-information/)
+In this book, you will find several recently proposed methods in various domains of computer vision. You will start by setting up the proper Python environment to work on practical applications. This includes setting up libraries such as OpenCV, TensorFlow, and Keras using Anaconda. Using these libraries, you'll start to understand the concepts of image transformation and filtering. You will find a detailed explanation of feature detectors such as FAST and ORB; you'll use them to find similar-looking objects.
+
+With an introduction to convolutional neural nets, you will learn how to build a deep neural net using Keras and how to use it to classify the Fashion-MNIST dataset. With regard to object detection, you will learn the implementation of a simple face detector as well as the workings of complex deep-learning-based object detectors such as Faster R-CNN and SSD using TensorFlow. You'll get started with semantic segmentation using FCN models and track objects with Deep SORT. Not only this, you will also use Visual SLAM techniques such as ORB-SLAM on a standard dataset.
+
+By the end of this book, you will have a firm understanding of the different computer vision techniques and how to apply them in your applications.
+
+- Buy at [Amazon US](https://www.amazon.com/Practical-Computer-Vision-insightful-information/dp/1788297687/ref=sr_1_3?ie=UTF8&qid=1519823185&sr=8-3&keywords=Practical+Computer+vision)
+- Codes at [Github](https://github.com/ResByte/Practical-Computer-Vision)
 
 ## Recent Posts
 - [Pytorch Tutorial for Practitioners](https://resbyte.github.io/posts/2017/08/pytorch-tutorial/)
