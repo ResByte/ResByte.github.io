@@ -30,8 +30,11 @@ With an introduction to convolutional neural nets, you will learn how to build a
 
 By the end of this book, you will have a firm understanding of the different computer vision techniques and how to apply them in your applications.
 
-- Buy at [Amazon US](https://www.amazon.com/Practical-Computer-Vision-insightful-information/dp/1788297687/ref=sr_1_3?ie=UTF8&qid=1519823185&sr=8-3&keywords=Practical+Computer+vision)
-- Codes at [Github](https://github.com/ResByte/Practical-Computer-Vision)
+- It can be bought on  
+	- [Amazon US](https://www.amazon.com/Practical-Computer-Vision-insightful-information/dp/1788297687/ref=sr_1_3?ie=UTF8&qid=1519823185&sr=8-3&keywords=Practical+Computer+vision)
+	- [Amazon IN](https://www.amazon.in/Practical-Computer-Vision-insightful-information-ebook/dp/B079QXG3WR/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1519824336&sr=8-1)
+
+- Codes are available at [Github](https://github.com/ResByte/Practical-Computer-Vision)
 
 ## Recent Posts
 - [Pytorch Tutorial for Practitioners](https://resbyte.github.io/posts/2017/08/pytorch-tutorial/)
