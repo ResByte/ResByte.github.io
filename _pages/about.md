@@ -8,7 +8,14 @@ redirect_from:
   - /about.html
 ---
 
-I am currently working at [Abeja](http://www.abeja.asia) as Deep Learning Researcher. I am interested in Applied Deep Learning  especially.  
+I am currently working at [Abeja](http://www.abeja.asia) as Deep Learning Researcher.
+
+## Areas of Interests
+- Generative Modelling in Computer Vision.
+- Semi-supervised modelling. 
+- Bayesian approaches to Deep Learning. 
+- Deep learning for edge devices
+
 Most frequent tools used are : Pytorch, Keras, Tensorflow, Nvidia-Docker, Opencv, Scikit-Learn
 
 Following are a few of the various themes I have worked on:
