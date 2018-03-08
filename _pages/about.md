@@ -18,7 +18,7 @@ I am currently working at [Abeja](http://www.abeja.asia) as Deep Learning Resear
 
 Most frequent tools used are : Pytorch, Keras, Tensorflow, Nvidia-Docker, Opencv, Scikit-Learn
 
-Following are a few of the various themes I have worked on:
+## Previously Worked on
 - GAN and AutoEncoders based Generative Modelling. 
 - Bayesian Deep Learning for Unsupervised Learning. 
 - Activity Recognition from Videos.
