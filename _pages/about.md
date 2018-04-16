@@ -16,7 +16,7 @@ I am currently working at [Abeja](http://www.abeja.asia) as Deep Learning Resear
 - Bayesian approaches to Deep Learning. 
 - Deep learning for edge devices
 
-Most frequent tools used are : Pytorch, Keras, Tensorflow, Nvidia-Docker, Opencv, Scikit-Learn
+Most frequently used tools are : Pytorch, Keras, Tensorflow, Nvidia-Docker, Opencv, Scikit-Learn
 
 ## Previously Worked on
 - GAN and AutoEncoders based Generative Modelling. 
