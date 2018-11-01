@@ -10,7 +10,6 @@ tags:
   - GAN
 ---
 
-# Notes: Generalization and Equilibrium in GANs
 This post is about an interesting paper by Arora et al. 2017. They explains a reasoning for not achieving correct equilibrium in GANs generators and discriminators. The paper points out that the choice of distance metrics to model objective may not be suitable for practical case. Also, the theoretical assumptions for computing objective may not be valid while training in practical domains. Finally, they present an new distance metric based solution from the perspective of psuedorandomness to solve this issue. 
 
 paper: [Arora et al.](https://arxiv.org/abs/1703.00573)

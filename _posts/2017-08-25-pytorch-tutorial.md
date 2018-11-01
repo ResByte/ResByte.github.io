@@ -7,7 +7,6 @@ tags:
   - Pytorch
   - python
 ---
-# Pytorch Tutorial for Practitioners
 
 The example here is motivated from pytorch examples. Please have a look at github/pytorch to know more.
 
