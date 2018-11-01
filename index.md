@@ -12,6 +12,10 @@ Most frequently used tools are : Pytorch, Keras, Tensorflow, Nvidia-Docker, Open
 C++ | Python| Keras | Tensorflow | Mxnet | Scikit-learn | OpenCV | ROS
 
 
+## Social Profiles
+
+[Twitter](https://twitter.com/dadhich_abhinav) | [Linkedin](https://www.linkedin.com/in/adadhich/) |[Github](https://github.com/ResByte)
+
 ## Education
 
 I completed Master course in Information Science from [NAIST](http://www.naist.jp/en/) with thesis in Robotics and Machine Learning. I did my undergraduate in Electrical Engineering from [IITJ](http://www.iitj.ac.in) with projects in video object tracking on embedded platform.
