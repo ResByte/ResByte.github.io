@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently working at [Abeja](http://www.abeja.asia) as Deep Learning Researcher and interested in Applied Deep Learning.
+I am currently working at [Abeja Singapore](http://abejainc.com/en/) as Senior Data Scientist and interested in Applied Deep Learning.
 
 Most frequently used tools are : Pytorch, Keras, Tensorflow, Nvidia-Docker, Opencv, Scikit-Learn
 
