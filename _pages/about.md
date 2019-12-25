@@ -18,6 +18,7 @@ Themes that I have worked on :
 - Visual SLAM for 3D structure estimation and mapping for autonomous robots.
 
 ## Recent Posts
+- [Notes: Do Imagenet Model Transfer Well](https://resbyte.github.io/posts/2019/12/Simon-imagenet-transfer/)
 - [Pytorch Tutorial for Practitioners](https://resbyte.github.io/posts/2017/08/pytorch-tutorial/)
 - [Densenet in TF](https://resbyte.github.io/posts/2017/05/tf-densenet/)
 - [GAN and Equilibrium](https://resbyte.github.io/posts/2017/04/arora-gen-eqbm-17/)
