@@ -27,7 +27,7 @@ Consider a case where we rotate input image and tries to predict the rotation us
 
 **Rotation:**
 
-![Self%20Supervised%20Learning%20for%20Vision/Untitled.png](imgs/Untitled.png)
+![Self%20Supervised%20Learning%20for%20Vision/Untitled.png](/images/Untitled.png)
 
 Example of rotation from Gidaris et al.2018
 
@@ -36,7 +36,7 @@ Example of rotation from Gidaris et al.2018
 
 **Exemplar:** 
 
-![Self%20Supervised%20Learning%20for%20Vision/Untitled%201.png](imgs/Untitled%201.png)
+![Self%20Supervised%20Learning%20for%20Vision/Untitled%201.png](/images/Untitled%201.png)
 
 Exemplar categories created by data augmentation of the top-left input image. Fig: Dosovitskiy et al. 2014
 
@@ -51,15 +51,15 @@ Exemplar categories created by data augmentation of the top-left input image. Fi
 
 Following figures are taken from Noroozi and Favaro 2017 
 
-![Self%20Supervised%20Learning%20for%20Vision/Untitled%202.png](imgs/Untitled%202.png)
+![Self%20Supervised%20Learning%20for%20Vision/Untitled%202.png](/images/Untitled%202.png)
 
 Patches are extracted from object region,
 
-![Self%20Supervised%20Learning%20for%20Vision/Untitled%203.png](imgs/Untitled%203.png)
+![Self%20Supervised%20Learning%20for%20Vision/Untitled%203.png](/images/Untitled%203.png)
 
 Example of a permutation of patches
 
-![Self%20Supervised%20Learning%20for%20Vision/Untitled%204.png](imgs/Untitled%204.png)
+![Self%20Supervised%20Learning%20for%20Vision/Untitled%204.png](/images/Untitled%204.png)
 
 Target patch orientation
 
@@ -74,7 +74,7 @@ Relative Patch Location:
 - These location are limited to 9 , such as below, below to right etc.
 - Model is trained to predict category of relative location given two patches as input.
 
-![Self%20Supervised%20Learning%20for%20Vision/Untitled%205.png](imgs/Untitled%205.png)
+![Self%20Supervised%20Learning%20for%20Vision/Untitled%205.png](/images/Untitled%205.png)
 
 Example of relative position definition for patches as shown in 
 
@@ -92,11 +92,11 @@ How to measure that self-supervised learning methods is actually beneficial? The
 
 Looking at the attention maps of Alexnet when trained using rotation pretext v/s standard supervised training. Following figures are taken from Gidaris et al. 2018 
 
-![Self%20Supervised%20Learning%20for%20Vision/Untitled%206.png](imgs/Untitled%206.png)
+![Self%20Supervised%20Learning%20for%20Vision/Untitled%206.png](/images/Untitled%206.png)
 
 Supervised Model 
 
-![Self%20Supervised%20Learning%20for%20Vision/Untitled%207.png](imgs/Untitled%207.png)
+![Self%20Supervised%20Learning%20for%20Vision/Untitled%207.png](/images/Untitled%207.png)
 
 Rotation based Self-supervised Model
 
@@ -106,13 +106,13 @@ Attention map is improved by spanning more over target region when self-supervis
 
 In the study analysis by Kolesnikov et al. several different architectures are tested with pretext tasks. A figure of analysis is as shown below
 
-![Self%20Supervised%20Learning%20for%20Vision/Untitled%208.png](imgs/Untitled%208.png)
+![Self%20Supervised%20Learning%20for%20Vision/Untitled%208.png](/images/Untitled%208.png)
 
 Figure by kolesnikov et al. 2019
 
 An important conclusion, they[Kolesnikov et al. 2019] came about is: 
 
-![Self%20Supervised%20Learning%20for%20Vision/Untitled%209.png](imgs/Untitled%209.png)
+![Self%20Supervised%20Learning%20for%20Vision/Untitled%209.png](/images/Untitled%209.png)
 
 It still cannot be considered that a pretext technique can lead to superior performance across various network architectures. 
 
