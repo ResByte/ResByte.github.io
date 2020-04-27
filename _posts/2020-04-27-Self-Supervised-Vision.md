@@ -7,7 +7,6 @@ tags:
   - Computer Vision
 ---
 
-## What?
 
 Self-supervised learning consists of a learning framework designed to learn representation of data using pretext tasks. A pretext task is supervised learning setting created automatically from the input such that the cost of label is free. Read more in **How?** section. 
 
