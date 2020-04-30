@@ -17,6 +17,9 @@ Themes that I have worked on :
 - Generative Adversarial Nets(GANs) and Auto Encoder Modeling for research experimentation
 - Visual SLAM for 3D structure estimation and mapping for autonomous robots.
 
+## Kaggle Notebooks
+- [Aptos Blindness Detection using Pytorch](https://www.kaggle.com/xrobot/aptos-classification-training-pytorch)
+
 ## Recent Posts
 - [Self Supervised Learning for Vision](https://resbyte.github.io/posts/2020/04/Self-Supervised-Vision/)
 - [Notes: Do Imagenet Model Transfer Well](https://resbyte.github.io/posts/2019/12/Simon-imagenet-transfer/)
