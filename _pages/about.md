@@ -18,6 +18,7 @@ Themes that I have worked on :
 - Visual SLAM for 3D structure estimation and mapping for autonomous robots.
 
 ## Kaggle Notebooks
+- [FGVC2020: Plant Leaf disease categorization using Efficientnets](https://github.com/ResByte/plant-pathology-2020-fgvc7-pytorch)
 - [Aptos Blindness Detection using Pytorch](https://www.kaggle.com/xrobot/aptos-classification-training-pytorch)
 
 ## Recent Posts
