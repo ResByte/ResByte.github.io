@@ -8,7 +8,7 @@ tags:
   - Adversarial
 ---
 
-This blog provides a breif write-up on the paper titled [Adversarial Examples Improve Image Recognition](https://arxiv.org/abs/1911.09665v2). As the paper explains how to use adversarial setting to improve the training of the model for large datasets like ImageNet 
+This blog provides a brief write-up on the paper titled [Adversarial Examples Improve Image Recognition](https://arxiv.org/abs/1911.09665v2). As the paper explains how to use adversarial setting to improve the training of the model for large datasets like ImageNet 
 
 
 ## Preliminary

@@ -21,6 +21,9 @@ Themes that I have worked on :
 - [FGVC2020: Plant Leaf disease categorization using Efficientnets](https://github.com/ResByte/plant-pathology-2020-fgvc7-pytorch)
 - [Aptos Blindness Detection using Pytorch](https://www.kaggle.com/xrobot/aptos-classification-training-pytorch)
 
+## CVPR 2020 Series 
+- [AdvProp for Model Training](https://resbyte.github.io/posts/2020/06/Adversarial-Prop/)
+
 ## Recent Posts
 - [Self Supervised Learning for Vision](https://resbyte.github.io/posts/2020/04/Self-Supervised-Vision/)
 - [Notes: Do Imagenet Model Transfer Well](https://resbyte.github.io/posts/2019/12/Simon-imagenet-transfer/)
