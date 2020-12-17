@@ -7,15 +7,13 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
-I am currently working at [Abeja Singapore](http://abejainc.com/en/) as Senior Data Scientist and interested in Applied Deep Learning.
-
-Most frequently used tools are : Pytorch, Keras, Tensorflow, Nvidia-Docker, Opencv, Scikit-Learn
+I am working as Senior Data Scientist at [Tricog](https://www.tricog.com/) and working on deep learning for medical imaging. Previously, I worked at [Abeja](http://abejainc.com/en/) as Senior Data Scientist.    
 
 Themes that I have worked on :
-- Object Detection, Image Segmentation and Classification problems with industrial setting. 
+- Object detection for security and inspections.
+- Image Classification for various industial automations.  
 - Generative Adversarial Nets(GANs) and Auto Encoder Modeling for research experimentation
-- Visual SLAM for 3D structure estimation and mapping for autonomous robots.
+- Visual SLAM for 3D structure scanning and mapping for autonomous robots.
 
 ## Kaggle Notebooks
 - [FGVC2020: Plant Leaf disease categorization using Efficientnets](https://github.com/ResByte/plant-pathology-2020-fgvc7-pytorch)
@@ -32,7 +30,7 @@ Themes that I have worked on :
 
 ## Programming and Tools
 
-C++ | Python| Pytorch | Tensorflow | Keras | Scikit-learn | OpenCV | ROS
+Python| Pytorch | Docker | Scikit-learn | OpenCV 
 
 
 ## Education
@@ -43,15 +41,4 @@ I graduated in Information Science as M.Eng from [NAIST](http://www.naist.jp/en/
 
 ## Book 
 
-### Practical Computer Vision
-
-> In this book, you will find several recently proposed methods in various domains of computer vision. You will start by setting up the proper Python environment to work on practical applications. This includes setting up libraries such as OpenCV, TensorFlow, and Keras using Anaconda. Using these libraries, you'll start to understand the concepts of image transformation and filtering. You will find a detailed explanation of feature detectors such as FAST and ORB; you'll use them to find similar-looking objects. With an introduction to convolutional neural nets, you will learn how to build a deep neural net using Keras and how to use it to classify the Fashion-MNIST dataset. With regard to object detection, you will learn the implementation of a simple face detector as well as the workings of complex deep-learning-based object detectors such as Faster R-CNN and SSD using TensorFlow. You'll get started with semantic segmentation using FCN models and track objects with Deep SORT. Not only this, you will also use Visual SLAM techniques such as ORB-SLAM on a standard dataset.
-
-By the end of this book, you will have a firm understanding of the different computer vision techniques and how to apply them in your applications.
-
-- It can be bought on  
-	- [Amazon US](https://www.amazon.com/Practical-Computer-Vision-insightful-information/dp/1788297687/ref=sr_1_3?ie=UTF8&qid=1519823185&sr=8-3&keywords=Practical+Computer+vision)
-	- [Amazon IN](https://www.amazon.in/Practical-Computer-Vision-insightful-information-ebook/dp/B079QXG3WR/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1519824336&sr=8-1)
-
-- Codes are available at [Github](https://github.com/ResByte/Practical-Computer-Vision)
-
+I have published book in 2018 titled "Practical Computer Vision" by Packt Publishing. It covers basics of implementation and an abstract understanding of key concepts. The book uses older versions of TF and Keras so there might be issues with API changes. Students and early learners can get the benefit of reducing the cold start in learning.  
