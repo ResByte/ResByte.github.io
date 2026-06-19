@@ -2,7 +2,6 @@
 title = "About"
 menu = "main"
 weight = 1
-aliases = ["/"]
 +++
 
 Abhinav is a Director for AI in Digital Health at Tricog working towards building better cardiac care using AI. He leads the full lifecycle for AI Medical Devices, from research and model development through regulatory approval, clinical trials, and scaled production deployment.
