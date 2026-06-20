@@ -1,0 +1,25 @@
+baseURL = "https://resbyte.github.io/"
+title = "Abhinav Dadhich"
+author = "Abhinav Dadhich"
+theme = "hugo-bearblog"
+locale = "en-us"
+enableRobotsTXT = true
+
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
+
+[permalinks]
+  blog = "/:slug/"
+
+[params]
+  description = "Writing about AI in healthcare, medical imaging, and clinical ML."
+  dateFormat = "2006-01-02"
+  enablePostNavigator = true
+  hideMadeWithLine = true
+
+[markup]
+  [markup.highlight]
+    style = "github"
+    lineNos = false
+    lineNumbersInTable = false
+    codeFences = true
