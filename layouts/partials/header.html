@@ -1,0 +1,12 @@
+<header class="site-head">
+  <a class="brand" href="{{ "" | relURL }}">{{ site.Title }}</a>
+  <div class="head-right">
+    <nav aria-label="Main">
+      {{- $current := . }}
+      {{- range site.Menus.main }}
+      <a href="{{ .URL }}"{{ if or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) (and .Page (eq .Page.Section $current.Section) (ne $current.Section "")) }} aria-current="page"{{ end }}>{{ .Name }}</a>
+      {{- end }}
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode">Dark</button>
+  </div>
+</header>

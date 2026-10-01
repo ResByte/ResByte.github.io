@@ -17,9 +17,29 @@ ignoreErrors = ["error-disable-taxonomy"]
   enablePostNavigator = true
   hideMadeWithLine = true
 
+  # Home page hero (layouts/index.html)
+  heroEyebrow = "Clinical AI · ECG · Medical imaging"
+  heroTitle = "Notes on building AI for the clinic"
+  heroLede = "Writing about AI in healthcare, medical imaging, and clinical ML — what works, what breaks, and what it takes to ship."
+
+  # Footer links (layouts/partials/footer.html)
+  [[params.social]]
+    name = "GitHub"
+    url = "https://github.com/Resbyte"
+  [[params.social]]
+    name = "LinkedIn"
+    url = "https://linkedin.com/in/adadhich"
+  [[params.social]]
+    name = "Scholar"
+    url = "https://scholar.google.com/citations?hl=en&user=azHefEoAAAAJ"
+
 [markup]
   [markup.highlight]
     style = "github"
     lineNos = false
     lineNumbersInTable = false
     codeFences = true
+    noClasses = false   # colours come from assets/css/syntax.css (light + dark)
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3

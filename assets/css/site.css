@@ -1,0 +1,67 @@
+/* ===========================================================================
+   Site glue for Hugo — loaded after blog-theme.css.
+   Only covers markup Hugo emits that the theme doesn't already style.
+   =========================================================================== */
+
+main { padding-top: clamp(2rem, 5vw, 3.4rem); }
+
+/* Header: brand left, nav + theme toggle right */
+.site-head .head-right { display: flex; align-items: center; gap: 1.1rem; }
+.site-head nav a[aria-current="page"] { color: var(--ink); }
+
+/* Home */
+.hero { margin-bottom: .6rem; }
+.hero h1 { margin-bottom: .9rem; }
+.hero .lede { max-width: 54ch; margin-bottom: 0; }
+.section-head {
+  display: flex; justify-content: space-between; align-items: baseline;
+  gap: 1rem; border-bottom: 1px solid var(--rule); padding-bottom: .5rem;
+}
+.section-head h2 { margin: 0; font-size: 1.05rem; color: var(--amber); }
+.section-head a { font-family: var(--sans); font-size: .86rem; }
+
+/* Post header */
+.post-head { margin-bottom: 2rem; }
+.post-head h1 { margin-bottom: .9rem; }
+.post-head .lede { margin-bottom: 1rem; }
+.post-head .meta { margin: 0; }
+.meta .sep { margin: 0 .45rem; opacity: .6; }
+.post-head .meta.tags { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .6rem; }
+.tag {
+  border: 1px solid var(--rule); border-radius: 999px;
+  padding: 0 .55rem; font-size: .78rem; background: var(--panel);
+}
+
+/* Hugo's {{ .TableOfContents }} in the side rail: nested lists */
+.rail nav#TableOfContents ul ul a { padding-left: 1.5rem; font-size: .82rem; }
+
+/* Code blocks: Hugo wraps highlighted <pre> in div.highlight */
+article > .highlight { max-width: min(100%, 52rem); }
+.highlight pre { margin: 1.5rem 0; }
+
+/* Previous / next */
+.post-nav {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;
+  margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--rule);
+  font-family: var(--sans);
+}
+.post-nav a { text-decoration: none; color: var(--ink); display: block; }
+.post-nav a:hover .t { color: var(--signal); }
+.post-nav .k { display: block; font-size: .78rem; color: var(--muted); }
+.post-nav .t { font-weight: 600; line-height: 1.3; }
+.post-nav .next { text-align: right; grid-column: 2; }
+.post-nav .prev:only-child { grid-column: 1 / -1; }
+@media (max-width: 560px) {
+  .post-nav { grid-template-columns: 1fr; }
+  .post-nav .next { grid-column: 1; text-align: left; }
+}
+
+/* Footer */
+.site-foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .6rem 1.4rem; }
+.site-foot nav { display: flex; flex-wrap: wrap; gap: 1rem; }
+.site-foot a { color: var(--muted); text-decoration: none; }
+.site-foot a:hover { color: var(--signal); }
+
+/* Rhythm strip baseline + 404 */
+.rhythm .baseline { stroke: var(--rule); stroke-width: 1; }
+.not-found .rhythm .trace { stroke: var(--muted); }
