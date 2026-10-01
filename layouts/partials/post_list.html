@@ -1,0 +1,14 @@
+{{/* Usage: partial "post_list.html" (slice of pages) */}}
+<ul class="posts">
+  {{- range . }}
+  <li>
+    <a href="{{ .RelPermalink }}">
+      <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan 2006" }}</time>
+      <span class="post-title">{{ .Title }}</span>
+      {{- with .Description }}<span class="post-blurb">{{ . }}</span>{{ end }}
+    </a>
+  </li>
+  {{- else }}
+  <li><p class="meta">No posts yet.</p></li>
+  {{- end }}
+</ul>

@@ -1,0 +1,327 @@
+/* ===========================================================================
+   Rhythm — a reading-first blog theme
+   Extracted from the ECG reading list. Styles semantic HTML, so it works with
+   whatever your generator emits; no utility classes required.
+
+   Fonts (add to <head>):
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/blog-theme.css">
+
+   Retheming: change the eight values under "dials" and everything follows.
+   =========================================================================== */
+
+/* --- dials ---------------------------------------------------------------- */
+:root {
+  --paper:   #faf8f5;   /* page background                   */
+  --panel:   #ffffff;   /* raised surfaces                   */
+  --ink:     #19222b;   /* body text                         */
+  --muted:   #6b7682;   /* metadata, captions                */
+  --rule:    #e2ddd5;   /* hairlines                         */
+  --signal:  #c2362b;   /* primary accent: links, markers    */
+  --slate:   #2f6f7e;   /* secondary accent: callouts        */
+  --amber:   #9a6a24;   /* tertiary accent: section labels   */
+
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --sans:  "IBM Plex Sans Condensed", system-ui, -apple-system, sans-serif;
+  --mono:  "SFMono-Regular", ui-monospace, Menlo, Consolas, monospace;
+
+  --measure: 68ch;      /* body line length                  */
+  --wide: 1180px;       /* outer container                   */
+
+  /* derived */
+  --ink-2: color-mix(in srgb, var(--ink) 78%, var(--paper));
+  --grid: color-mix(in srgb, var(--signal) 7%, transparent);
+  --wash: color-mix(in srgb, var(--signal) 5%, transparent);
+
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:#14181c; --panel:#191e24; --ink:#e8e6e1; --muted:#8d97a1;
+    --rule:#2b323a; --signal:#e0796c; --slate:#6fb0c0; --amber:#d2a05c;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:#14181c; --panel:#191e24; --ink:#e8e6e1; --muted:#8d97a1;
+  --rule:#2b323a; --signal:#e0796c; --slate:#6fb0c0; --amber:#d2a05c;
+}
+
+*, *::before, *::after { box-sizing: inherit; }
+
+/* --- base ----------------------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(2rem + env(safe-area-inset-top, 0px));
+  -webkit-text-size-adjust: 100%;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important; animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.68;
+  font-variant-numeric: oldstyle-nums;
+  text-rendering: optimizeLegibility;
+  /* ECG-paper grid. Delete these three lines for a flat background. */
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 14px 14px;
+}
+
+::selection { background: var(--signal); color: var(--paper); }
+:focus-visible { outline: 2px solid var(--slate); outline-offset: 3px; border-radius: 2px; }
+
+/* --- layout --------------------------------------------------------------- */
+.wrap { width: min(var(--wide), 92vw); margin-inline: auto; }
+
+/* Article column. Full-bleed children escape it via .bleed / figure. */
+article, .prose { max-width: var(--measure); }
+article > figure, article > .bleed, article > pre, article > table {
+  max-width: min(100%, 52rem);
+}
+
+/* Two-column shell with a sticky side rail. */
+.shell {
+  display: grid;
+  grid-template-columns: 13.5rem minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3.4rem);
+  align-items: start;
+}
+@media (max-width: 860px) {
+  .shell { grid-template-columns: 1fr; }
+  .shell > .rail { display: none; }
+}
+.rail { position: sticky; top: calc(1.5rem + env(safe-area-inset-top, 0px)); }
+
+/* --- headings ------------------------------------------------------------- */
+h1, h2, h3, h4 {
+  font-family: var(--sans);
+  font-weight: 600;
+  letter-spacing: -.012em;
+  line-height: 1.1;
+  margin: 0 0 .4rem;
+  text-wrap: balance;
+}
+h1 { font-size: clamp(2.1rem, 5.2vw, 3.4rem); line-height: 1.03; max-width: 20ch; }
+h2 { font-size: clamp(1.4rem, 3vw, 1.85rem); margin-top: 2.6rem; }
+h3 { font-size: 1.12rem; margin-top: 1.9rem; }
+h4 { font-size: .95rem; color: var(--amber); margin-top: 1.5rem; }
+
+/* Section label above a heading — use for a real category, not decoration. */
+.eyebrow {
+  font-family: var(--sans); font-size: .84rem; color: var(--slate);
+  margin: 0 0 .15rem;
+}
+
+p { margin: 0 0 1.05rem; }
+.lede { font-size: 1.22rem; line-height: 1.55; color: var(--ink-2); font-weight: 300; }
+
+/* --- metadata ------------------------------------------------------------- */
+.meta {
+  font-family: var(--sans); font-size: .86rem; color: var(--muted);
+  line-height: 1.45; margin: 0 0 1.4rem;
+}
+.meta a { color: inherit; }
+time { font-variant-numeric: tabular-nums; }
+
+/* --- links ---------------------------------------------------------------- */
+a {
+  color: var(--signal);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .16em;
+  text-decoration-color: color-mix(in srgb, var(--signal) 40%, transparent);
+  transition: text-decoration-color .15s;
+}
+a:hover { text-decoration-color: var(--signal); }
+
+/* --- lists ---------------------------------------------------------------- */
+ul, ol { padding-left: 1.15rem; margin: 0 0 1.05rem; }
+li { margin-bottom: .45rem; padding-left: .2rem; }
+li::marker { color: var(--signal); }
+ol { font-variant-numeric: tabular-nums; }
+
+/* --- quotes and callouts -------------------------------------------------- */
+blockquote {
+  margin: 1.6rem 0; padding: .1rem 0 .1rem 1.1rem;
+  border-left: 3px solid var(--signal);
+  font-size: 1.1rem; color: var(--ink-2);
+}
+blockquote p:last-child { margin-bottom: 0; }
+
+.note {
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--slate);
+  border-radius: 3px;
+  padding: 1rem 1.2rem;
+  margin: 1.7rem 0;
+}
+.note > :first-child { margin-top: 0; }
+.note > :last-child { margin-bottom: 0; }
+.note h3, .note h4 { color: var(--slate); margin-top: 0; }
+.note--warn { border-left-color: var(--signal); }
+.note--warn h3, .note--warn h4 { color: var(--signal); }
+
+/* --- figures -------------------------------------------------------------- */
+/* Panel stays light in both themes so diagrams with white backgrounds,
+   screenshots and charts never glare against a dark page. */
+figure {
+  margin: 1.8rem 0; padding: 1rem;
+  background: #fbfaf9;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  overflow-x: auto;
+}
+figure img, figure svg { display: block; margin-inline: auto; max-width: 100%; height: auto; }
+figcaption {
+  font-family: var(--sans); font-size: .8rem; color: #6b7682;
+  text-align: center; line-height: 1.45; margin: .7rem auto 0; max-width: 60ch;
+}
+img { max-width: 100%; height: auto; }
+
+/* --- code ----------------------------------------------------------------- */
+code, kbd, samp {
+  font-family: var(--mono); font-size: .88em;
+  font-variant-numeric: normal;
+}
+:not(pre) > code {
+  background: var(--wash);
+  border: 1px solid color-mix(in srgb, var(--signal) 14%, transparent);
+  border-radius: 3px;
+  padding: .08em .32em;
+  color: var(--ink);
+}
+pre {
+  font-family: var(--mono); font-size: .84rem; line-height: 1.6;
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--amber);
+  border-radius: 3px;
+  padding: .95rem 1.1rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+pre code { background: none; border: 0; padding: 0; font-size: inherit; }
+
+/* --- tables --------------------------------------------------------------- */
+.table-scroll { overflow-x: auto; margin: 1.5rem 0; }
+table {
+  border-collapse: collapse; width: 100%;
+  font-family: var(--sans); font-size: .92rem;
+}
+th, td {
+  text-align: left; padding: .55rem .7rem .55rem 0;
+  border-bottom: 1px solid var(--rule); vertical-align: top;
+}
+th { font-weight: 600; color: var(--muted); border-bottom-width: 1.5px; }
+td { font-variant-numeric: tabular-nums; }
+
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.6rem 0; }
+
+/* --- post index ----------------------------------------------------------- */
+.posts { list-style: none; padding: 0; margin: 0; }
+.posts li { margin: 0; padding: 0; }
+.posts a {
+  display: grid; grid-template-columns: 6.5rem minmax(0, 1fr);
+  gap: .2rem 1.2rem; align-items: baseline;
+  padding: 1rem 0; border-bottom: 1px solid var(--rule);
+  text-decoration: none; color: var(--ink);
+}
+.posts a:hover .post-title { color: var(--signal); }
+.posts .post-date {
+  font-family: var(--sans); font-size: .82rem; color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.posts .post-title { font-family: var(--sans); font-size: 1.14rem; font-weight: 600; }
+.posts .post-blurb { grid-column: 2; color: var(--ink-2); font-size: .98rem; }
+@media (max-width: 560px) {
+  .posts a { grid-template-columns: 1fr; gap: .15rem; }
+  .posts .post-blurb { grid-column: 1; }
+}
+
+/* --- side rail / table of contents ---------------------------------------- */
+.rail-head { font-family: var(--sans); font-size: .78rem; color: var(--muted); margin: 0 0 .55rem; }
+.rail ol, .rail ul { list-style: none; padding: 0; margin: 0; }
+.rail li { margin: 0; }
+.rail a {
+  display: flex; gap: .6rem; align-items: baseline;
+  border-left: 2px solid var(--rule);
+  padding: .3rem 0 .3rem .7rem;
+  font-family: var(--sans); font-size: .88rem; line-height: 1.3;
+  color: var(--muted); text-decoration: none;
+  transition: color .18s, border-color .18s;
+}
+.rail a:hover { color: var(--ink); }
+.rail a[aria-current="true"] { color: var(--ink); border-left-color: var(--signal); }
+.rail .n { font-size: .76rem; opacity: .75; font-variant-numeric: tabular-nums; }
+
+/* --- site chrome ---------------------------------------------------------- */
+.site-head {
+  display: flex; flex-wrap: wrap; gap: .6rem 1.4rem;
+  align-items: baseline; justify-content: space-between;
+  padding: 1.6rem 0 1.2rem; border-bottom: 1px solid var(--rule);
+  font-family: var(--sans);
+}
+.site-head .brand { font-weight: 600; font-size: 1.02rem; color: var(--ink); text-decoration: none; }
+.site-head nav { display: flex; gap: 1.1rem; font-size: .92rem; }
+.site-head nav a { color: var(--muted); text-decoration: none; }
+.site-head nav a:hover { color: var(--signal); }
+
+.site-foot {
+  border-top: 1px solid var(--rule); margin-top: 3.5rem;
+  padding: 1.4rem 0 2.5rem;
+  font-family: var(--sans); font-size: .82rem; color: var(--muted);
+}
+
+.theme-toggle {
+  font-family: var(--sans); font-size: .78rem;
+  background: var(--panel); color: var(--muted);
+  border: 1px solid var(--rule); border-radius: 999px;
+  padding: .35rem .8rem; cursor: pointer;
+}
+.theme-toggle:hover { color: var(--ink); }
+
+/* --- optional: rhythm strip ----------------------------------------------- */
+/* Subject-specific. Keep it if you write about signals, physiology or
+   time series; otherwise delete this block and the markup that uses it. */
+.rhythm { margin: clamp(1.6rem, 4vw, 2.6rem) 0; overflow-x: auto; }
+.rhythm svg { display: block; width: 100%; min-width: 620px; height: auto; }
+.rhythm .trace {
+  fill: none; stroke: var(--signal); stroke-width: 2.1;
+  stroke-linejoin: round; stroke-linecap: round;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .rhythm .trace {
+    stroke-dasharray: 4200; stroke-dashoffset: 4200;
+    animation: rhythm-draw 2.4s cubic-bezier(.65, .02, .3, 1) .15s forwards;
+  }
+  @keyframes rhythm-draw { to { stroke-dashoffset: 0; } }
+}
+
+/* --- print ---------------------------------------------------------------- */
+@media print {
+  body { background: #fff; color: #000; font-size: 11pt; }
+  .rail, .site-head nav, .theme-toggle, .rhythm { display: none; }
+  article { max-width: none; }
+  figure, pre, blockquote { break-inside: avoid; }
+  a { color: #000; text-decoration: underline; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: .85em; color: #555; }
+}

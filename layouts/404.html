@@ -1,0 +1,9 @@
+{{ define "title" }}Page not found | {{ site.Title }}{{ end }}
+{{ define "main" }}
+<section class="hero not-found">
+  <p class="eyebrow">404</p>
+  <h1>No signal on this lead.</h1>
+  <p class="lede">The page you were looking for isn't here. Try the <a href="{{ "blog/" | relURL }}">blog</a> or go <a href="{{ "" | relURL }}">home</a>.</p>
+  {{ partial "rhythm.html" . }}
+</section>
+{{ end }}

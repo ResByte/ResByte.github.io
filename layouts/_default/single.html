@@ -1,0 +1,43 @@
+{{ define "main" }}
+{{- $isPost := and (eq .Section "blog") (not .Params.menu) }}
+{{- $toc := "" }}
+{{- if and $isPost (ne .Params.toc false) (gt (len .Fragments.Headings) 0) }}{{ $toc = .TableOfContents }}{{ end }}
+
+<div class="{{ if $toc }}shell{{ end }}">
+  {{- if $toc }}
+  <aside class="rail" aria-label="On this page">
+    <p class="rail-head">On this page</p>
+    {{ $toc }}
+  </aside>
+  {{- end }}
+
+  <article>
+    <header class="post-head">
+      <h1>{{ .Title }}</h1>
+      {{- if $isPost }}
+      {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+      <p class="meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 January 2006" }}</time>
+        <span class="sep">·</span>{{ .ReadingTime }} min read
+      </p>
+      {{- with .Params.tags }}
+      <p class="meta tags">{{ range . }}<span class="tag">{{ . }}</span>{{ end }}</p>
+      {{- end }}
+      {{- end }}
+    </header>
+
+    {{ .Content }}
+
+    {{- if and $isPost (.Param "enablePostNavigator") (or .PrevInSection .NextInSection) }}
+    <nav class="post-nav" aria-label="More posts">
+      {{- with .PrevInSection }}
+      <a class="prev" href="{{ .RelPermalink }}"><span class="k">← Older</span><span class="t">{{ .Title }}</span></a>
+      {{- end }}
+      {{- with .NextInSection }}
+      <a class="next" href="{{ .RelPermalink }}"><span class="k">Newer →</span><span class="t">{{ .Title }}</span></a>
+      {{- end }}
+    </nav>
+    {{- end }}
+  </article>
+</div>
+{{ end }}
