@@ -19,7 +19,7 @@
 
     // Highlight the current section in the side-rail table of contents.
     var links = document.querySelectorAll('.rail a[href^="#"]');
-    if (!links.length || !("IntersectionObserver" in window)) return;
+    if (!links.length) return;
     var map = {};
     links.forEach(function (a) { map[decodeURIComponent(a.getAttribute("href").slice(1))] = a; });
     var heads = Array.prototype.filter.call(
@@ -30,11 +30,17 @@
       links.forEach(function (a) { a.removeAttribute("aria-current"); });
       if (map[id]) map[id].setAttribute("aria-current", "true");
     }
-    var io = new IntersectionObserver(function () {
-      var current = heads[0];
-      heads.forEach(function (h) { if (h.getBoundingClientRect().top < window.innerHeight * 0.3) current = h; });
+    var ticking = false;
+    function update() {
+      ticking = false;
+      var line = window.innerHeight * 0.3, current = heads[0];
+      heads.forEach(function (h) { if (h.getBoundingClientRect().top <= line) current = h; });
       if (current) set(current.id);
-    }, { rootMargin: "0px 0px -60% 0px", threshold: [0, 1] });
-    heads.forEach(function (h) { io.observe(h); });
+    }
+    window.addEventListener("scroll", function () {
+      if (!ticking) { ticking = true; requestAnimationFrame(update); }
+    }, { passive: true });
+    window.addEventListener("resize", update);
+    update();
   })();
 </script>
