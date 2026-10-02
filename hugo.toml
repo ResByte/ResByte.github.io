@@ -17,11 +17,6 @@ ignoreErrors = ["error-disable-taxonomy"]
   enablePostNavigator = true
   hideMadeWithLine = true
 
-  # Home page hero (layouts/index.html)
-  heroEyebrow = "Clinical AI · ECG · Medical imaging"
-  heroTitle = "Notes on building AI for the clinic"
-  heroLede = "Writing about AI in healthcare, medical imaging, and clinical ML — what works, what breaks, and what it takes to ship."
-
   # Footer links (layouts/partials/footer.html)
   [[params.social]]
     name = "GitHub"
