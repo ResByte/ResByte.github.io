@@ -35,6 +35,11 @@ ignoreErrors = ["error-disable-taxonomy"]
     lineNumbersInTable = false
     codeFences = true
     noClasses = false   # colours come from assets/css/syntax.css (light + dark)
+  [markup.goldmark.extensions.passthrough]
+    enable = true   # LaTeX: $$...$$ or \[...\] for display, \(...\) inline
+    [markup.goldmark.extensions.passthrough.delimiters]
+      block = [['\[', '\]'], ['$$', '$$']]
+      inline = [['\(', '\)']]
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 3

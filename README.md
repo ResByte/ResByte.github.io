@@ -1,14 +1,33 @@
-A Github Pages template for academic websites. This was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.
+# resbyte.github.io
 
-I think I've got things running smoothly and fixed some major bugs, but feel free to file issues or make pull requests if you want to improve the generic template / theme.
+Personal blog of Abhinav Dadhich, built with [Hugo](https://gohugo.io) and deployed to GitHub Pages by `.github/workflows/hugo.yml` on every push to `master`.
 
-# Instructions
+## Writing a post
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+Create `content/blog/<yyyy-mm-dd-slug>.md`:
 
-See more info at https://academicpages.github.io/
+```toml
++++
+title = "Post title"
+date = "2026-10-02"
+description = "One or two sentences — shown under the title and in the post list."
+tags = ["ECG", "clinical AI"]
++++
+```
+
+- **Math:** `$$ ... $$` on its own lines for display equations, `\( ... \)` inline. Rendered to HTML at build time (KaTeX); no JavaScript.
+- **Images:** put them in `static/images/` and reference as `/images/name.png`.
+- **Table of contents:** generated from `##`/`###` headings; set `toc = false` to hide it.
+
+## Preview locally
+
+```bash
+git submodule update --init   # first time only (theme)
+hugo server
+```
+
+## Layout
+
+- `assets/css/blog-theme.css` — the Rhythm theme (colours and fonts are the "dials" at the top)
+- `assets/css/site.css`, `assets/css/syntax.css` — Hugo-specific additions, code highlighting
+- `layouts/` — page templates (override `themes/hugo-bearblog`)

@@ -13,3 +13,8 @@
 {{- $css := slice (resources.Get "css/blog-theme.css") (resources.Get "css/syntax.css") (resources.Get "css/site.css") | resources.Concat "css/site.css" }}
 {{- if hugo.IsProduction }}{{ $css = $css | minify | fingerprint }}{{ end }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}"{{ with $css.Data.Integrity }} integrity="{{ . }}"{{ end }}>
+{{- /* KaTeX styles only on pages whose content contains math. */}}
+{{- $noop := .Content }}
+{{- if .Store.Get "hasMath" }}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" crossorigin="anonymous">
+{{- end }}
