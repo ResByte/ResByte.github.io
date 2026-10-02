@@ -32,6 +32,13 @@ main { padding-top: clamp(2rem, 5vw, 3.4rem); }
   padding: 0 .55rem; font-size: .78rem; background: var(--panel);
 }
 
+/* Single-column posts on narrow screens: let wide code/math scroll inside
+   their own box instead of stretching the column (grid 1fr min = content). */
+@media (max-width: 860px) { .shell { grid-template-columns: minmax(0, 1fr); } }
+.shell > article { min-width: 0; }
+/* Long bare URLs wrap instead of pushing the page sideways */
+article a { overflow-wrap: anywhere; }
+
 /* Hugo's {{ .TableOfContents }} in the side rail: nested lists */
 .rail nav#TableOfContents ul ul a { padding-left: 1.5rem; font-size: .82rem; }
 
@@ -65,3 +72,7 @@ article > .highlight { max-width: min(100%, 52rem); }
 /* Rhythm strip baseline + 404 */
 .rhythm .baseline { stroke: var(--rule); stroke-width: 1; }
 .not-found .rhythm .trace { stroke: var(--muted); }
+
+/* Math (KaTeX, rendered at build time) */
+.katex-display { overflow-x: auto; overflow-y: hidden; padding: .3rem 0; margin: 1.2rem 0; }
+.katex { font-size: 1.05em; }
